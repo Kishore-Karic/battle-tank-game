@@ -23,6 +23,7 @@ namespace BattleTank.Services
         [SerializeField] private GameObject infoPanel;
         [SerializeField] private float pauseTime;
         [SerializeField] private float resumeTime;
+        [SerializeField] private Button quitButton;
         public PlayerHealthUI PlayerHealthUI;
 
         private Coroutine coroutine;
@@ -37,8 +38,9 @@ namespace BattleTank.Services
             base.Awake();
             infoButton.onClick.AddListener(DisplayInfoPanel);
             backButton.onClick.AddListener(CloseInfoPanel);
+            quitButton.onClick.AddListener(QuitApplication);
         }
-        
+
         private void Start()
         {
             titleQueue = new Queue<string>();
@@ -55,6 +57,11 @@ namespace BattleTank.Services
         {
             infoPanel.SetActive(false);
             Time.timeScale = resumeTime;
+        }
+
+        private void QuitApplication()
+        {
+            Application.Quit();
         }
 
         public void DisplayAchievement(string title, string description)
