@@ -30,8 +30,11 @@ Main Functionalities,
 Other Functionalities,
 
 Collectible Health - Added Collectible Health for Player when Health is below 50% and it will add 30%(from Total Health) to Player Health.
+
 Indication Object - An Arrow Object will show direction for Collectible Health.
+
 Achievement Panel - Achievement UI panel to display the Achievement Title and Description.
+
 Health UI - Added Health UI for Player at the Top left on the Screen. Added Health UI for Enemies at the top of their Enemy Object and it will rotate according to Player's position.
 Score System - Added Scores for completing Achievements and Tanks destroyed with UI panel to display Scores.
 Sound System - Added Sounds with Sound Service for both Effects and Music.
