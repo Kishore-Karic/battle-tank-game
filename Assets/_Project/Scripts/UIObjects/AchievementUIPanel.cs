@@ -18,6 +18,8 @@ namespace BattleTank.UI
         [SerializeField] private float rotationLimitFromLeft;
         [SerializeField] private float rotationLimitToRight;
 
+        [SerializeField] private GameObject infoButton;
+
         private void Awake()
         {
             defaultRotationAngle = Quaternion.Euler(newDefaultRotation);
@@ -45,6 +47,7 @@ namespace BattleTank.UI
                 {
                     rotateUIPanelToRight = false;
                     transform.rotation = defaultRotationAngle;
+                    infoButton.SetActive(true);
                 }
             }
         }
@@ -52,6 +55,7 @@ namespace BattleTank.UI
         public void StartIntro(bool _value)
         {
             rotateUIPanelFromLeft = _value;
+            infoButton.SetActive(false);
         }
 
         public void StartOutro(bool _value)

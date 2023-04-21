@@ -798,9 +798,9 @@ RectTransform:
   m_Father: {fileID: 1451635900}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0075000008, y: 0.017772729}
-  m_AnchorMax: {x: 0.066250004, y: 0.08510796}
-  m_AnchoredPosition: {x: 0.29992676, y: -0.099975586}
+  m_AnchorMin: {x: 0.9325, y: 0.017772729}
+  m_AnchorMax: {x: 0.99125004, y: 0.08510796}
+  m_AnchoredPosition: {x: 0, y: -0.099975586}
   m_SizeDelta: {x: -0.099975586, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440542753
@@ -1307,10 +1307,10 @@ RectTransform:
   m_Father: {fileID: 1451635900}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.9312501, y: 0.017772729}
-  m_AnchorMax: {x: 0.98875004, y: 0.08510796}
-  m_AnchoredPosition: {x: -0.099975586, y: -0.099975586}
-  m_SizeDelta: {x: 0.9000244, y: 0}
+  m_AnchorMin: {x: 0.01125, y: 0.017772729}
+  m_AnchorMax: {x: 0.07125, y: 0.08510796}
+  m_AnchoredPosition: {x: 0, y: -0.099975586}
+  m_SizeDelta: {x: -1.0999756, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &875548936
 MonoBehaviour:
@@ -3438,6 +3438,7 @@ MonoBehaviour:
   rotationSpeed: 3
   rotationLimitFromLeft: 355
   rotationLimitToRight: 90
+  infoButton: {fileID: 440542751}
 --- !u!1 &1902767450 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1937322002219584, guid: 51efbcd4c99909a41a3d0ba4e325d119,
