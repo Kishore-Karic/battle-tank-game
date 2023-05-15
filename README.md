@@ -1,37 +1,34 @@
-# battle-tank-game
+# Battle Tank
 Training project using Unity's Battle Tank base artwork
-3D Tank Game from Outscal Project.
+3D Tank Game from Outscal Project. <br/>
+[Gameplay Trailer](https://drive.google.com/file/d/1NaOvFIAm1yc1RJYo-dXr7D84nWaSpCpP/view?usp=share_link) <br/>
+[Playable Link](https://kishore-karic.itch.io/battletank) <br/>
 
-I have used 6 Design Patterns to make it as an Optimized game.
+# Game Functionality
+1. 3 types of Tanks Blue, Green and Red tank.
+2. 3 tupes of Bullets Slow, Medium and Fast.
+3. Player can choose any from 3 tanks
+4. There will be 3 Enemies at a time with any of the types randomly
+5. Game run till Player death
+6. All of the Enemies are patroling to random point until Player comes into range
+7. 3 types of Achievemnts for Player, where each achievement can have 3 to 10 sub levels
+8. Scores reward for Completing achievement and kill enemies
+9. Collectible Health for Player
+10. Indication Arrow to point Collectible Health
+11. Player Health bar on UI and Enemy Health bar on top of that Enemy
+12. Achievement panel to display Achievements
+13. Sound system
 
-Design Patterns,
+# Design Patterns
+* MVC for tanks and bullets
+* Scriptable Objects for storing different types of datas of tanks and bullets
+* State Machine for Enemies to do an tasks assigned for that states only
+* Generic Object Pooling for tanks, bullets and particle effects to reusing same objects instead of Intantiate and Delete canstantly
+* Observer Pattern for Achievements to keep track for conditions and call Observers
+* Generic Singleton for Services like Player, Enemy, Bullets etc..
 
-Generic Singleton - Created Generic Singleton and make Service script as Singletons from Generic Singleton.
-MVC-S - Created Model View Controller(MVC) for Tanks and Bullets and separate Service for Tanks and Bullets which handle MVC.
-Scriptable Objects - As of now there is 3 different types of Tanks and Bullets, so handle the separate data for each type with Scriptable Objects and there will be Scriptable Object List to store these types separate for tanks and Bullets. Also used this to store Achievement System details.
-State Machine - Created State Machine for Enemy they have 5 different States Idle, Patrol, Chase, Attack and Dead state, and they will go from one state one to another state according to the conditions.
-Observer Pattern - Created Achievement System using Observer Pattern. so, the Observer look for progress to meet its conditions and then update the Achievement.
-Object Pooling - used Object Pooling for Instantiate all of the required GameObjects(Tanks, Bullets, Particle Effects) at the Start and only Enable and Disable the GameObjects to reduce System Load.
-
-Main Functionalities,
-
-3 types of Tanks - BlueTank - High movement speed, Slow turn speed with High Health
-          GreenTank - Medium movement speed, Medium turn speed with Medium Health
-          RedTank - Slow movement speed, High turn Speed with Low Health
-
-3 types of Bullets - FastBullet  - Low damage, High speed for BlueTank
-           NormalBullet - Medium damage, Medium speed for GreenTank
-           SlowBullet  - High damage, Low speed for RedTank
-
-3 types of Achievement with Sub-Levels - BulletFired with 10 Sub-Levels
-                    EnemyTanksDestroyed with 5 Sub-Levels
-                    EscapeFromEnemyRange with 3 Sub-Levels
-
-Other Functionalities,
-
-Collectible Health - Added Collectible Health for Player when Health is below 50% and it will add 30%(from Total Health) to Player Health.
-Indication Object - An Arrow Object will show direction for Collectible Health.
-Achievement Panel - Achievement UI panel to display the Achievement Title and Description.
-Health UI - Added Health UI for Player at the Top left on the Screen. Added Health UI for Enemies at the top of their Enemy Object and it will rotate according to Player's position.
-Score System - Added Scores for completing Achievements and Tanks destroyed with UI panel to display Scores.
-Sound System - Added Sounds with Sound Service for both Effects and Music.
+# Screenshots
+![Picture_1](https://github.com/Kishore-Karic/battle-tank-game/assets/97879797/5355a938-ebcb-4fe0-bafe-a64243ca6d14)
+![Picture_2](https://github.com/Kishore-Karic/battle-tank-game/assets/97879797/773bfe32-517c-4122-802c-2a9743b0a86b)
+![Picture_3](https://github.com/Kishore-Karic/battle-tank-game/assets/97879797/9a044150-82e7-4331-bd20-8f6b6b0bd533)
+![Picture_4](https://github.com/Kishore-Karic/battle-tank-game/assets/97879797/f0b08063-6e93-42d5-a4ee-109d611363ca)
