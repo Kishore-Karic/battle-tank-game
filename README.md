@@ -1,7 +1,7 @@
 # Battle Tank
 Training project using Unity's Battle Tank base artwork
 3D Tank Game from Outscal Project. <br/>
-[Gameplay Trailer](https://drive.google.com/file/d/1NaOvFIAm1yc1RJYo-dXr7D84nWaSpCpP/view?usp=share_link) <br/>
+[Gameplay Trailer](https://youtu.be/ygUVJvsPH9Q) <br/>
 [Playable Link](https://kishore-karic.itch.io/battletank) <br/>
 
 # Game Functionality
